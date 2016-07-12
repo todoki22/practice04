@@ -9,12 +9,12 @@ public class ShapeTest {
 
 		for( Shape shape : shapes ) {
 			System.out.println( "area: " + shape.getArea() );
-			System.out.println( "perimeter: " + shape.getArea() );
+			System.out.println( "perimeter: " + shape.getPerimeter() );
 			if( shape instanceof Resizable ) {
 				Resizable resizable = (Resizable) shape;
 				resizable.resize( 0.5 );
 				System.out.println( "new area: " + shape.getArea() );
-				System.out.println( "new perimeter: " + shape.getArea() );
+				System.out.println( "new perimeter: " + shape.getPerimeter() );
 			}
 		}
 	}
